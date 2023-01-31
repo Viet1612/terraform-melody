@@ -1,3 +1,9 @@
+#################################################
+# 1 VPC with 2 public subnets, 2 private subnets
+# 1 bastion host
+# 1 EC2 instance inside private subnets
+#################################################
+
 provider "aws" {
   region = "us-east-2"
 }
