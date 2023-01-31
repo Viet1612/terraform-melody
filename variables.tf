@@ -62,3 +62,15 @@ variable "key_pair" {
   type    = string
   default = ""
 }
+
+#endpoint
+variable "endpoint_s3" {
+  type    = string
+  default = ""
+}
+
+# S3
+variable "s3_name" {
+  type    = string
+  default = ""
+}

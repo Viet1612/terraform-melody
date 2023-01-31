@@ -72,7 +72,14 @@ security_group_bastion_host_ingress = {
 }
 
 
+#enpoint
+
+endpoint_s3 = "com.amazonaws.us-east-2.s3"
+
 #ec2
 ami           = "ami-05bfbece1ed5beb54"
 instance_type = "t2.micro"
 key_pair = "vietkey"
+
+#s3
+s3_name = "terraform-melody1612"

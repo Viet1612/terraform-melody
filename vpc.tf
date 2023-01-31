@@ -95,3 +95,9 @@ resource "aws_network_acl_association" "db" {
   network_acl_id = aws_network_acl.db.id
 
 }
+
+# endpoint
+resource "aws_vpc_endpoint" "s3" {
+  vpc_id       = aws_vpc.my_vpc.id
+  service_name = var.endpoint_s3
+}
