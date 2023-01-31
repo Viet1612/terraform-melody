@@ -81,7 +81,7 @@ resource "aws_network_interface" "eni_bastion_host" {
 resource "aws_instance" "web_private" {
   ami           = var.ami
   instance_type = var.instance_type
-  key_name      = "vietkey"
+  key_name      = var.key_pair
 
   network_interface {
     network_interface_id = aws_network_interface.eni_web_private.id
@@ -96,7 +96,7 @@ resource "aws_instance" "web_private" {
 resource "aws_instance" "bastion_host" {
   ami           = var.ami
   instance_type = var.instance_type
-  key_name      = "vietkey"
+  key_name      = var.key_pair
 
   network_interface {
     network_interface_id = aws_network_interface.eni_bastion_host.id

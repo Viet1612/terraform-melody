@@ -73,5 +73,6 @@ security_group_bastion_host_ingress = {
 
 
 #ec2
-ami           = "ami-02d1e544b84bf7502"
+ami           = "ami-05bfbece1ed5beb54"
 instance_type = "t2.micro"
+key_pair = "vietkey"
